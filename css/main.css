@@ -1315,6 +1315,38 @@ body {
     transform: scale(0);
   }
 }
+.characters {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5%;
+  pointer-events: none;
+}
+
+.char {
+  width: 120px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.doraemon {
+  animation-delay: 0s;
+}
+
+.kitty {
+  animation-delay: 1.5s;
+}
+
+/* animasi ngambang */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
 .container * {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
