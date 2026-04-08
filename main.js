@@ -1,6 +1,4 @@
-onload = () =>{
-        document.body.classList.remove("container");
-};
+
 <script>
   window.addEventListener("load", function() {
     const audio = document.querySelector("audio");
