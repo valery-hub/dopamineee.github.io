@@ -1,11 +1,7 @@
-
-<script>
-  window.addEventListener("load", function() {
-    const audio = document.querySelector("audio");
+window.addEventListener("load", () => {
+    const audio = document.getElementById("bgm");
+    audio.muted = false;
     audio.play().catch(() => {
-      document.body.addEventListener("click", () => {
-        audio.play();
-      }, { once: true });
+        document.body.addEventListener("click", () => audio.play(), { once: true });
     });
-  });
-</script>
+});
