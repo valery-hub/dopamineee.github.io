@@ -1,90 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="css/main.css">
-<link rel="icon" href="img/flowers.png" type="image/x-icon">
-<title>Flowers</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>Flowers</title>
 </head>
 <body class="container">
+    <!-- Background malam -->
+    <div class="night"></div>
 
-<audio id="bgm" loop>
-  <source src="music/lagu.mp3" type="audio/mpeg">
-</audio>
+    <!-- Bunga & daun -->
+    <div class="flowers">
+        <!-- Flower 1 -->
+        <div class="flower flower--1">
+            <div class="flower__leafs flower__leafs--1">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__white-circle"></div>
 
-<!-- Malam / background -->
-<div class="night"></div>
+                <div class="flower__light flower__light--1"></div>
+                <div class="flower__light flower__light--2"></div>
+                <div class="flower__light flower__light--3"></div>
+                <div class="flower__light flower__light--4"></div>
+                <div class="flower__light flower__light--5"></div>
+                <div class="flower__light flower__light--6"></div>
+                <div class="flower__light flower__light--7"></div>
+                <div class="flower__light flower__light--8"></div>
 
-<!-- Bunga dan daun -->
-<div class="flowers">
-  <!-- Flower 1 -->
-  <div class="flower flower--1">
-    <div class="flower__leafs flower__leafs--1">
-      <div class="flower__leaf flower__leaf--1"></div>
-      <div class="flower__leaf flower__leaf--2"></div>
-      <div class="flower__leaf flower__leaf--3"></div>
-      <div class="flower__leaf flower__leaf--4"></div>
-      <div class="flower__white-circle"></div>
+                <div class="characters">
+                    <img src="img/doraemon.png" class="char doraemon">
+                    <img src="img/hello-kitty.png" class="char kitty">
+                </div>
+            </div>
 
-      <div class="flower__light flower__light--1"></div>
-      <div class="flower__light flower__light--2"></div>
-      <div class="flower__light flower__light--3"></div>
-      <div class="flower__light flower__light--4"></div>
+            <div class="flower__line">
+                <div class="flower__line__leaf flower__line__leaf--1"></div>
+                <div class="flower__line__leaf flower__line__leaf--2"></div>
+                <div class="flower__line__leaf flower__line__leaf--3"></div>
+                <div class="flower__line__leaf flower__line__leaf--4"></div>
+                <div class="flower__line__leaf flower__line__leaf--5"></div>
+                <div class="flower__line__leaf flower__line__leaf--6"></div>
+            </div>
+        </div>
+
+        <!-- Flower 2 dan 3 (kopi struktur sama) -->
+        <div class="flower flower--2">
+            <div class="flower__leafs flower__leafs--2">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__white-circle"></div>
+
+                <div class="flower__light flower__light--1"></div>
+                <div class="flower__light flower__light--2"></div>
+                <div class="flower__light flower__light--3"></div>
+                <div class="flower__light flower__light--4"></div>
+                <div class="flower__light flower__light--5"></div>
+                <div class="flower__light flower__light--6"></div>
+                <div class="flower__light flower__light--7"></div>
+                <div class="flower__light flower__light--8"></div>
+            </div>
+            <div class="flower__line">
+                <div class="flower__line__leaf flower__line__leaf--1"></div>
+                <div class="flower__line__leaf flower__line__leaf--2"></div>
+                <div class="flower__line__leaf flower__line__leaf--3"></div>
+                <div class="flower__line__leaf flower__line__leaf--4"></div>
+            </div>
+        </div>
+
+        <div class="flower flower--3">
+            <div class="flower__leafs flower__leafs--3">
+                <div class="flower__leaf flower__leaf--1"></div>
+                <div class="flower__leaf flower__leaf--2"></div>
+                <div class="flower__leaf flower__leaf--3"></div>
+                <div class="flower__leaf flower__leaf--4"></div>
+                <div class="flower__white-circle"></div>
+
+                <div class="flower__light flower__light--1"></div>
+                <div class="flower__light flower__light--2"></div>
+                <div class="flower__light flower__light--3"></div>
+                <div class="flower__light flower__light--4"></div>
+                <div class="flower__light flower__light--5"></div>
+                <div class="flower__light flower__light--6"></div>
+                <div class="flower__light flower__light--7"></div>
+                <div class="flower__light flower__light--8"></div>
+            </div>
+            <div class="flower__line">
+                <div class="flower__line__leaf flower__line__leaf--1"></div>
+                <div class="flower__line__leaf flower__line__leaf--2"></div>
+                <div class="flower__line__leaf flower__line__leaf--3"></div>
+                <div class="flower__line__leaf flower__line__leaf--4"></div>
+            </div>
+        </div>
     </div>
-    <div class="flower__line">
-      <div class="flower__line__leaf flower__line__leaf--1"></div>
-      <div class="flower__line__leaf flower__line__leaf--2"></div>
-    </div>
-  </div>
 
-  <!-- Flower 2 -->
-  <div class="flower flower--2">
-    <div class="flower__leafs flower__leafs--2">
-      <div class="flower__leaf flower__leaf--1"></div>
-      <div class="flower__leaf flower__leaf--2"></div>
-      <div class="flower__leaf flower__leaf--3"></div>
-      <div class="flower__leaf flower__leaf--4"></div>
-      <div class="flower__white-circle"></div>
+    <!-- Musik autoplay -->
+    <audio id="bgm" autoplay loop muted>
+        <source src="music/lagu.mp3" type="audio/mp3">
+    </audio>
 
-      <div class="flower__light flower__light--1"></div>
-      <div class="flower__light flower__light--2"></div>
-      <div class="flower__light flower__light--3"></div>
-      <div class="flower__light flower__light--4"></div>
-    </div>
-    <div class="flower__line">
-      <div class="flower__line__leaf flower__line__leaf--1"></div>
-    </div>
-  </div>
-
-  <!-- Karakter -->
-  <div class="characters">
-    <img src="img/doraemon.png" class="char doraemon">
-    <img src="img/hello-kitty.png" class="char kitty">
-  </div>
-
-  <!-- Daun panjang & daun kecil animasi -->
-  <div class="long-g long-g--0">
-    <div class="leaf leaf--0"></div>
-    <div class="leaf leaf--1"></div>
-  </div>
-  <div class="long-g long-g--1">
-    <div class="leaf leaf--0"></div>
-    <div class="leaf leaf--1"></div>
-  </div>
-
-  <!-- Tambah daun lain sesuai desain lama -->
-</div>
-
-<script>
-  // Audio autoplay fallback
-  window.addEventListener("load", () => {
-    const audio = document.getElementById("bgm");
-    audio.play().catch(() => {
-      document.body.addEventListener("click", () => audio.play(), { once: true });
-    });
-  });
-</script>
+    <script>
+      window.addEventListener("load", () => {
+        const audio = document.getElementById("bgm");
+        audio.muted = false;
+        audio.play().catch(() => {
+          document.body.addEventListener("click", () => audio.play(), { once: true });
+        });
+      });
+    </script>
 </body>
 </html>
