@@ -1328,6 +1328,7 @@ body {
 .char {
   width: 120px;
   animation: float 3s ease-in-out infinite;
+  filter: drop-shadow(0 0 10px white);
 }
 
 .doraemon {
