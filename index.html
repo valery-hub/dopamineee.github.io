@@ -27,4 +27,15 @@
         
     </div>
 </body>
+    <audio id="bgm" autoplay loop muted>
+  <source src="music/lagu.mp3" type="audio/mp3">
+</audio>
+
+<script>
+  window.onload = () => {
+    const bgm = document.getElementById("bgm");
+    bgm.muted = false;
+    bgm.play().catch(() => {});
+  };
+</script>
 </html>
