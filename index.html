@@ -10,34 +10,33 @@
 </head>
 <body>
     <div class="greetings">
+    <!-- silahkan menambah kata sesuai keinginan dengan <span>text...</span -->
         <span>T</span>
         <span>E</span>
         <span>D</span>
         <span>D</span>
         <span>Y</span>
     </div>
-
+  
     <div class="description">
         <span>something special from PanPan</span>
     </div>
-
     <div class="button">
         <button>
             <a href="flower.html">Klik disini</a>
         </button>
+        
     </div>
 </body>
-    <!-- Musik background -->
     <audio id="bgm" autoplay loop muted>
-        <source src="music/lagu.mp3" type="audio/mp3">
-    </audio>
+  <source src="music/lagu.mp3" type="audio/mp3">
+</audio>
 
-    <script>
-      window.onload = () => {
-        const bgm = document.getElementById("bgm");
-        bgm.muted = false;
-        bgm.play().catch(() => {});
-      };
-    </script>
-
+<script>
+  window.onload = () => {
+    const bgm = document.getElementById("bgm");
+    bgm.muted = false;
+    bgm.play().catch(() => {});
+  };
+</script>
 </html>
